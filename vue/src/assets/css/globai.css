@@ -1,0 +1,6 @@
+/*  * 代表所有元素  ,去除外边距,box-sizing  变成盒状元素  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

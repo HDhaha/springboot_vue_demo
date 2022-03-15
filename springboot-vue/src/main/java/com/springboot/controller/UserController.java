@@ -33,6 +33,10 @@ public class UserController {
                               @RequestParam(defaultValue = "10") Integer pageSize,
                               @RequestParam(defaultValue = "") String search){
 //        System.out.println();
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
+        System.out.println("nihao");
         Page userPage = userService.selectPage(pageNum, pageSize,search);
         return Result.success(userPage);
     }

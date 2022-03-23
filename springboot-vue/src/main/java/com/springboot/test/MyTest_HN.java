@@ -13,7 +13,7 @@ import java.util.List;
 */
 public class MyTest_HN {
     public static void main(String[] args) {
-        stringUtils_Join();//StringUtils.join();
+//        stringUtils_Join();//StringUtils.join();
         json();//JSON.toJSONString  将对象转换程json字符串
         System.out.println(Arrays.asList("0371"));
         System.out.println(Arrays.asList("0371").contains("0"));
@@ -30,7 +30,7 @@ public class MyTest_HN {
          * 对象转化为json字符串
          */
         String jsonStr = JSON.toJSONString(staff);
-        System.out.println(jsonStr);
+        System.out.println("JSON.toJSONString: "+jsonStr);
     }
     static void stringUtils_Join(){
         ArrayList<String> list = new ArrayList<>();

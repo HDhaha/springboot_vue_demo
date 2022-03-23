@@ -32,11 +32,6 @@ public class UserController {
     public Result<?> findPage(@RequestParam(defaultValue = "1") Integer pageNum,
                               @RequestParam(defaultValue = "10") Integer pageSize,
                               @RequestParam(defaultValue = "") String search){
-//        System.out.println();
-//        System.out.println();
-//        System.out.println();
-//        System.out.println();
-        System.out.println("nihao");
         Page userPage = userService.selectPage(pageNum, pageSize,search);
         return Result.success(userPage);
     }

@@ -22,6 +22,11 @@ const routes = [
     name: 'login',
     component: ()=>import("@/views/LoginView")
   },
+  {
+    path: '/test',
+    name: 'test',
+    component: ()=>import("@/views/TestView")
+  },
 ]
 
 const router = createRouter({

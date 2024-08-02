@@ -33,6 +33,7 @@ public class UserController {
                               @RequestParam(defaultValue = "10") Integer pageSize,
                               @RequestParam(defaultValue = "") String search){
         Page userPage = userService.selectPage(pageNum, pageSize,search);
+        System.out.println("ceshi");
         return Result.success(userPage);
     }
 }
